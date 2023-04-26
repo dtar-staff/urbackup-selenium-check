@@ -13,7 +13,7 @@ import os
 
 driver_options = webdriver.FirefoxOptions()
 driver_options.add_argument("-headless")
-driver = webdriver.Firefox()
+driver = webdriver.Firefox(options=driver_option)
 
 login_page = LoginPage(driver, LOGIN_URL)
 login_page.input_password(PASSWORD)
