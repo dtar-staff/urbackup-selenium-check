@@ -11,6 +11,8 @@ from config import *
 import csv
 import os
 
+driver_options = webdriver.FirefoxOptions()
+driver_options.add_argument("-headless")
 driver = webdriver.Firefox()
 
 login_page = LoginPage(driver, LOGIN_URL)
